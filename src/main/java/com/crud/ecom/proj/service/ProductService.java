@@ -24,7 +24,7 @@ public class ProductService {
         product.setImageName(imageFile.getOriginalFilename());
         product.setImageType(imageFile.getContentType());
         product.setImageData(imageFile.getBytes());
-
+        System.out.println("Product added : " + product.getName());
         return repo.save(product);
     }
 
